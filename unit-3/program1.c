@@ -1,17 +1,16 @@
 
 /* Write a program to perform following operation on singly linked list:
-a. Create a linked list
-b. Display it */
+
 #include <stdio.h>
 #include <stdlib.h>
 
-// Structure for a node
+
 struct Node {
     int data;
     struct Node *next;
 };
 
-// Function to create a linked list
+
 struct Node* createList(int n) {
     struct Node *head = NULL;
     struct Node *newNode, *temp;
@@ -37,7 +36,7 @@ struct Node* createList(int n) {
     return head;
 }
 
-// Function to display the linked list
+
 void display(struct Node *head) {
     struct Node *temp = head;
 
@@ -51,7 +50,7 @@ void display(struct Node *head) {
     printf("NULL\n");
 }
 
-// Main function
+
 int main() {
     struct Node *head;
     int n;
@@ -59,10 +58,10 @@ int main() {
     printf("Enter number of nodes: ");
     scanf("%d", &n);
 
-    // Create linked list
+
     head = createList(n);
 
-    // Display linked list
+    
     display(head);
 
     return 0;
